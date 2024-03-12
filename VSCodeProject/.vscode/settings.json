@@ -1,0 +1,28 @@
+{
+    "background.enabled": true,
+    // 背景图样式。
+    "background.style": {
+    "content": "''",
+    "pointer-events": "none",
+    "position": "absolute",
+    "z-index": "99999",
+    //宽度
+    "width": "100%",
+            //高度
+    "height": "100%",
+    "background-position": "center",
+    "background-size": "cover",
+    "background-repeat": "no-repeat",
+    //不透明度
+    "opacity": 0.2
+    },
+// 使用默认图片
+"background.useDefault": false,
+// 是否使用前景图，这样会使图片放在代码的顶部
+"background.useFront": false,
+"files.associations": {
+    "ostream": "cpp"
+},
+
+
+}

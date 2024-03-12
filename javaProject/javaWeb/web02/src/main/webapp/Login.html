@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>javaScript-2</title>
+  <style>
+    form {
+      display: flex;
+
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+    }
+    input{
+      height: 30px;
+    }
+    #submit{
+      height: 34px;
+      width: 109px;
+      color: #fff;
+      cursor: pointer;
+      text-align: center;
+      border: 0;
+      background:#55aaff;
+      line-height: 32px;
+    }
+
+  </style>
+</head>
+<body>
+<form action="http://localhost:8080/web02_war/LoginServlet" method="post" onsubmit="return validateForm()">
+  <p>
+    <label  for="username">用户名&nbsp;</label>
+    <input onfocus="username_onFocus()" onBlur="username_loseFocus()" type="text" name="username" id="username" class="input" autocomplete="off" value="" placeholder="用户名">
+  </p>
+
+
+  <p>
+    <label for="password">密&emsp;码&nbsp;</label>
+    <input onfocus="password_onFocus()" onBlur="password_loseFocus()" type="password" name="password" id="password" class="input" autocomplete="off" value="" placeholder="登录密码">
+  </p>
+
+  <p>
+    <input type="submit" id="submit" value="登录" >
+  </p>
+</form>
+
+
+<script>
+  var usernameReg = /^\w{4,10}$/;
+  var passwordReg = /^(?=.*[a-z])(?=.*[A-Z])[a-zA-Z\d!@#$%^&*()\-+]+$/;
+  function username_onFocus() {
+    document.getElementById("userNameError").style.display = 'none';
+  }
+  function username_loseFocus() {
+    var usernameInput = document.getElementById("username");
+    var username = usernameInput.value.trim();
+    if(!usernameReg.test(username)) {
+      document.getElementById("userNameError").style.display = 'inline-block';
+    }
+  }
+
+  function password_onFocus() {
+    document.getElementById("passwordError").style.display = 'none';
+  }
+  function password_loseFocus() {
+    var passwordInput = document.getElementById("password");
+    var password = passwordInput.value.trim();
+    if(!passwordReg.test(password)) {
+      document.getElementById("passwordError").style.display = 'inline-block';
+    }
+  }
+
+  function validateForm() {
+    var username = document.getElementById('username').value.trim();
+    var password = document.getElementById('password').value.trim();
+
+    if (!usernameReg.test(username)) {
+      document.getElementById("userNameError").style.display = 'inline-block';
+      return false;
+    }
+
+
+    if (!passwordReg.test(password)) {
+      document.getElementById("passwordError").style.display = 'inline-block';
+      return false;
+    }
+
+    return true; // 如果通过所有验证，返回 true
+  }
+
+
+</script>
+</body>
+</html>

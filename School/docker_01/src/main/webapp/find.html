@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图书管理系统</title>
+    <script type="text/javascript" src="js/vue.js"></script>
+    <script type="text/javascript" src="js/axious.js"></script>
+</head>
+<body>
+<div id="find">
+    欢迎来到图书管理系统,请输入要查询的图书Id:<input v-model="data.id" type="text">
+    <button @click.prevent="find">查询</button></br>
+    查询到的图书数据为：
+    图书id：{{data.id}},图书书名：{{data.bookname}},图书作者：{{data.author}}
+</div>
+</body>
+<script type="text/javascript">
+    Vue.config.productionTip =false;
+    const vm = new Vue({
+        el: '#find',
+        data: {
+            data: {
+                id : '',
+                bookname: '',
+                author: ''
+            }
+        },
+        methods: {
+            find() {
+                axios({
+                    method: 'post',
+                    url: `http://47.113.216.244:8080/ssm_demo/book`,
+                    data: {
+                        'id' : this.data.id
+                    },
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
+                    },
+                }).then(res => {
+                    console.log(res)
+                    this.data =res.data
+                })
+                    .catch(error => {
+                        console.error('Login failed:', error);
+                    })
+                    .finally(() => {
+                    });
+            }
+        }
+    });
+</script>
+</html>

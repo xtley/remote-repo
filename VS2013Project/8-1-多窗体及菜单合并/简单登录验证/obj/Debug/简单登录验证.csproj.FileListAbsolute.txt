@@ -1,0 +1,10 @@
+D:\CodeProject\VS2013Project\8-1-多窗体及菜单合并\简单登录验证\bin\Debug\简单登录验证.exe.config
+D:\CodeProject\VS2013Project\8-1-多窗体及菜单合并\简单登录验证\bin\Debug\简单登录验证.exe
+D:\CodeProject\VS2013Project\8-1-多窗体及菜单合并\简单登录验证\bin\Debug\简单登录验证.pdb
+D:\CodeProject\VS2013Project\8-1-多窗体及菜单合并\简单登录验证\obj\Debug\简单登录验证.Form1.resources
+D:\CodeProject\VS2013Project\8-1-多窗体及菜单合并\简单登录验证\obj\Debug\简单登录验证.Properties.Resources.resources
+D:\CodeProject\VS2013Project\8-1-多窗体及菜单合并\简单登录验证\obj\Debug\简单登录验证.csproj.GenerateResource.Cache
+D:\CodeProject\VS2013Project\8-1-多窗体及菜单合并\简单登录验证\obj\Debug\简单登录验证.exe
+D:\CodeProject\VS2013Project\8-1-多窗体及菜单合并\简单登录验证\obj\Debug\简单登录验证.pdb
+D:\CodeProject\VS2013Project\8-1-多窗体及菜单合并\简单登录验证\obj\Debug\简单登录验证.csproj.AssemblyReference.cache
+D:\CodeProject\VS2013Project\8-1-多窗体及菜单合并\简单登录验证\obj\Debug\简单登录验证.csproj.CoreCompileInputs.cache

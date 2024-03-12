@@ -1,0 +1,52 @@
+
+一， 线程的常用结构
+1. 线程中的构造器
+- public Thread():分配一个新的线程对象。
+- public Thread(String name):分配一个指定名字的新的线程对象。
+- public Thread(Runnable target):指定创建线程的目标对象，它实现了Runnable接口中的run方法
+- public Thread(Runnable target,String name):分配一个带有指定目标显新的线程对象并指定名字。
+
+
+2. 线程中的常用方法：
+> start():①启动线程②调用线程的run()
+> run():将线程要执行的操作声明在run()中。
+> currentThread():静态方法，获取当前执行代码的线程
+> getName():获取线程名
+> setName():设置线程名
+> sleep( ..(ms) ):静态方法，让线程停留一段时间,调用时可以使得当前线程睡眠一段时间
+> yield():静态方法，释放cpu执行权，将执行权 让渡给其他的线程。
+> join(): 在线程a中通过线程b调用join(),意味着线程a加入阻塞状态，直到线程b执行结束。
+> isAlive():判断当前线程是否还存活，返回值是bool类型。
+过时方法：
+> stop():强行结束一个线程的执行，直接进入死亡状态。run()即刻停止，可能会导致一些清理性
+         的工作得不到完成，如文件，数据库等的关闭。同时，会立即释放该线程所持有的所有的
+         锁，导致数据得不到同步的处理，出现数据不一致的问题。
+> suspend()/resume() :这两个操作好比播放器的暂停和恢复。二者必须成对出现，否则非常容易
+         发生死锁。suspend()调用会导致线程暂停，但不会释放如何锁资源，导致其他线程都无法
+         访问被它占用的锁，直到调用resume()。可能造成死锁，也不建议使用。
+
+
+3. 线程的优先级
+java使用抢占式调度，优先级高的线程先执行（概率较大）
+Thread类内部声明的三个优先级常量：
+    MAX_PRIORITY(10):最高优先级
+    MIN_PRIORITY(1):最低优先级
+    NORM_PRIORITY(5):标准优先级，默认情况下main()线程具有普通优先级。
+
+getPriority():获取线程的优先级 一个数字 默认是5
+setPriority():设置线程的优先级 范围[1,10]
+
+
+
+二， 线程的生命周期
+JDK1.5之前：5种状态
+线程的声明周期有5种状态：
+新建(New)，就绪(Runnable)，运行(Running)，阻塞(Blocked)，死亡(Dead)。
+CPU需要在多条线程之间切换，于是线程状态会多次在运行，阻塞，就绪之间切换，
+方法的调用导致-->状态的改变
+
+
+
+JDK1.5及之后：6种状态
+Thread内部有一个枚举类 State里面声明了6种对象：
+NEW,RUNNABLE,BLOCKED,WAITING,TIMED_WAITING,TERMINATED。

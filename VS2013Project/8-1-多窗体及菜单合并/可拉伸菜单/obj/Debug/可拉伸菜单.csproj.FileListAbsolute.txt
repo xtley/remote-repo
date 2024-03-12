@@ -1,0 +1,10 @@
+D:\CodeProject\VS2013Project\8-1-多窗体及菜单合并\可拉伸菜单\bin\Debug\可拉伸菜单.exe.config
+D:\CodeProject\VS2013Project\8-1-多窗体及菜单合并\可拉伸菜单\bin\Debug\可拉伸菜单.exe
+D:\CodeProject\VS2013Project\8-1-多窗体及菜单合并\可拉伸菜单\bin\Debug\可拉伸菜单.pdb
+D:\CodeProject\VS2013Project\8-1-多窗体及菜单合并\可拉伸菜单\obj\Debug\可拉伸菜单.Form1.resources
+D:\CodeProject\VS2013Project\8-1-多窗体及菜单合并\可拉伸菜单\obj\Debug\可拉伸菜单.Properties.Resources.resources
+D:\CodeProject\VS2013Project\8-1-多窗体及菜单合并\可拉伸菜单\obj\Debug\可拉伸菜单.csproj.GenerateResource.Cache
+D:\CodeProject\VS2013Project\8-1-多窗体及菜单合并\可拉伸菜单\obj\Debug\可拉伸菜单.exe
+D:\CodeProject\VS2013Project\8-1-多窗体及菜单合并\可拉伸菜单\obj\Debug\可拉伸菜单.pdb
+D:\CodeProject\VS2013Project\8-1-多窗体及菜单合并\可拉伸菜单\obj\Debug\可拉伸菜单.csproj.AssemblyReference.cache
+D:\CodeProject\VS2013Project\8-1-多窗体及菜单合并\可拉伸菜单\obj\Debug\可拉伸菜单.csproj.CoreCompileInputs.cache

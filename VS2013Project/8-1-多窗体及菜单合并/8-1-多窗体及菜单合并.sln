@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8-1-多窗体及菜单合并", "8-1-多窗体及菜单合并\8-1-多窗体及菜单合并.csproj", "{ABF25ED0-6BFE-430E-804D-64A9C919522C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "可拉伸菜单", "可拉伸菜单\可拉伸菜单.csproj", "{1E9C12EF-31C9-4AFB-821E-742F35CFE0EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "单选按钮与消息框", "单选按钮与消息框\单选按钮与消息框.csproj", "{A5C5DA57-5036-4245-835E-8F0C3FAC0D58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "制作时间窗体", "制作时间窗体\制作时间窗体.csproj", "{94242BF1-61EC-47E4-B32F-CC2C33714923}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "简单登录验证", "简单登录验证\简单登录验证.csproj", "{42851E4E-D094-4F38-946D-56CBB322C24E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ABF25ED0-6BFE-430E-804D-64A9C919522C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABF25ED0-6BFE-430E-804D-64A9C919522C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABF25ED0-6BFE-430E-804D-64A9C919522C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABF25ED0-6BFE-430E-804D-64A9C919522C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E9C12EF-31C9-4AFB-821E-742F35CFE0EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E9C12EF-31C9-4AFB-821E-742F35CFE0EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E9C12EF-31C9-4AFB-821E-742F35CFE0EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E9C12EF-31C9-4AFB-821E-742F35CFE0EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5C5DA57-5036-4245-835E-8F0C3FAC0D58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5C5DA57-5036-4245-835E-8F0C3FAC0D58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5C5DA57-5036-4245-835E-8F0C3FAC0D58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5C5DA57-5036-4245-835E-8F0C3FAC0D58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94242BF1-61EC-47E4-B32F-CC2C33714923}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94242BF1-61EC-47E4-B32F-CC2C33714923}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94242BF1-61EC-47E4-B32F-CC2C33714923}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94242BF1-61EC-47E4-B32F-CC2C33714923}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42851E4E-D094-4F38-946D-56CBB322C24E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42851E4E-D094-4F38-946D-56CBB322C24E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42851E4E-D094-4F38-946D-56CBB322C24E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42851E4E-D094-4F38-946D-56CBB322C24E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

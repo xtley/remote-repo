@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MDI多窗体设计", "MDI多窗体设计\MDI多窗体设计.csproj", "{60FA0C63-DF7D-4B2F-A156-CE59CF0E2751}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MDI窗体合并操作", "MDI窗体合并操作\MDI窗体合并操作.csproj", "{DBA96147-7F7E-4505-A93C-589452974648}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup1", "..\..\打包\Setup1\Setup1\Setup1.vdproj", "{6B1FE5BF-079D-4383-ACA4-E296B97A7971}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{60FA0C63-DF7D-4B2F-A156-CE59CF0E2751}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60FA0C63-DF7D-4B2F-A156-CE59CF0E2751}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60FA0C63-DF7D-4B2F-A156-CE59CF0E2751}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60FA0C63-DF7D-4B2F-A156-CE59CF0E2751}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBA96147-7F7E-4505-A93C-589452974648}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBA96147-7F7E-4505-A93C-589452974648}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBA96147-7F7E-4505-A93C-589452974648}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBA96147-7F7E-4505-A93C-589452974648}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B1FE5BF-079D-4383-ACA4-E296B97A7971}.Debug|Any CPU.ActiveCfg = Debug
+		{6B1FE5BF-079D-4383-ACA4-E296B97A7971}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F710C7DD-F7D8-4D28-B834-AFAB911B8887}
+	EndGlobalSection
+EndGlobal

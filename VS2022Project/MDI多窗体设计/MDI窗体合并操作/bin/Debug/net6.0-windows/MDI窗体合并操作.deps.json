@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "MDI窗体合并操作/1.0.0": {
+        "runtime": {
+          "MDI窗体合并操作.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MDI窗体合并操作/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

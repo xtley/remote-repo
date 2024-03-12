@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="js/vue.js"></script>
+    <script type="text/javascript" src="js/axious.js"></script>
+    <link rel="stylesheet" href="css/Login.css">
+</head>
+<body>
+<div id="register">
+    <p>
+        <label  for="username">用户名&nbsp;</label>
+        <input v-model="username" id="username" type="text" placeholder="Username">
+    </p>
+    <p>
+        <label  for="password">密码&nbsp;</label>
+        <input v-model="password" id="password" type="password" placeholder="Password">
+    </p>
+    <p>
+        <button @click.prevent="register">注册</button>
+    </p>
+</div>
+</body>
+<script type="text/javascript">
+    Vue.config.productionTip =false;
+    new Vue({
+        el: '#register',
+        data: {
+            username: '',
+            password: '',
+        },
+        methods: {
+            register() {
+                axios({
+                    method: 'post',
+                    url: `http://47.113.216.244:8080/ssm_demo/register`,
+                    data: {
+                        'username' : this.username,
+                        'password' : this.password
+                    },
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
+                    },
+                }).then(res => {
+                    //请求成功的响应结果，可以做更多处理
+                    console.log(res);
+                    window.location.href = 'Login.html';
+                })
+                    .catch(error => {
+                        // 处理登录失败
+                        console.error('Register failed:', error);
+                    });
+            }
+        }
+    });
+</script>
+</html>

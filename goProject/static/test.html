@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="wut" class="wut" name="wut" type="password" onFocus="onFocus()" onBlur="onBlur()">
+<label id="check"></label>
+</body>
+<script>
+    var check = document.getElementById("check");
+    function onFocus() {
+        check.textContent  = "请输入长度为11位的数字";
+    }
+    function onBlur() {
+        var password = document.getElementById("wut").value;
+        var reg = /^\d{11}$/;
+        if(reg.test(password))
+            check.textContent ="密码符合规则";
+        else
+            check.textContent ="密码不符合规则，请输入长度为11位的数字";
+    }
+</script>
+</html>
